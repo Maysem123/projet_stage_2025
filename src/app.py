@@ -429,7 +429,11 @@ st.markdown("""
 @st.cache_data
 def load_data(path):
     """Loads data from a CSV file."""
-    df = pd.read_csv(path)
+    # Resolve path relative to project root so Streamlit can run from any cwd
+    import os
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+    abs_path = path if os.path.isabs(path) else os.path.join(project_root, path)
+    df = pd.read_csv(abs_path)
     # Handle missing TotalCharges for new customers
     df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
     df['TotalCharges'] = df['TotalCharges'].fillna(0)
@@ -438,12 +442,15 @@ def load_data(path):
 @st.cache_resource
 def load_model(path):
     """Loads a pre-trained model."""
-    model = joblib.load(path)
+    import os
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+    abs_path = path if os.path.isabs(path) else os.path.join(project_root, path)
+    model = joblib.load(abs_path)
     return model
 
 # Load data and model
 df_data = load_data('data/WA_Fn-UseC_-Telco-Customer-Churn.csv')
-model = load_model('src/models/catboost_churn_model.joblib')
+model = load_model('models/catboost_churn_model.joblib')
 
 # --- XAI Setup ---
 @st.cache_resource

@@ -1,0 +1,196 @@
+\documentclass[11pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{lipsum} % For dummy text
+
+% --- Page Layout ---
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+% --- Colors ---
+\definecolor{maincolor}{rgb}{0.0, 0.5, 0.5} % Teal
+\definecolor{coverblue}{HTML}{002060}
+\definecolor{coverburgundy}{HTML}{800000}
+\definecolor{covertext}{HTML}{2D3748}
+
+\setlength{\headheight}{14pt}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+% --- Headers and Footers ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{maincolor}{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% --- Title Formatting ---
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{maincolor}}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-30pt}{40pt}
+
+% --- Hyperlinks ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=maincolor,
+}
+
+% --- Document ---
+\begin{document}
+
+% --- Title Page ---
+\begin{titlepage}
+    \thispagestyle{empty}
+    \sffamily
+    \begin{center}
+        \vspace*{5.5cm}
+        {\Huge\bfseries\textcolor{coverblue}{Journal de Stage}}\par
+        \vspace{1.4cm}
+        {\Large\bfseries\textcolor{coverburgundy}{Progression du Projet - Analyse et Prédiction de Churn}}\par
+        \vspace{2.8cm}
+        {\large
+        \begin{tabular}{@{}ll@{}}
+            \textcolor{covertext}{\textbf{Auteur :}} & \textcolor{covertext}{[Your Name]} \\[0.4cm]
+            \textcolor{covertext}{\textbf{Période :}} & \textcolor{covertext}{[Start Date] - [End Date]} \\[0.4cm]
+            \textcolor{covertext}{\textbf{Établissement :}} & \textcolor{covertext}{ESPRIM} \\[0.4cm]
+            \textcolor{covertext}{\textbf{Entreprise :}} & \textcolor{covertext}{INSITFUL} \\[0.4cm]
+            \textcolor{covertext}{\textbf{Tuteur de stage :}} & \textcolor{covertext}{Elgregba Amira} \\
+        \end{tabular}}
+        \vspace{3cm}
+
+        {\Large\textcolor{covertext}{\textbf{Année universitaire :} 2025 -- 2026}}\par
+    \end{center}
+    \vfill
+\end{titlepage}
+
+% --- Table of Contents ---
+\tableofcontents
+\newpage
+
+% --- Journal Entries ---
+\chapter{Semaine 1}
+\section{Jour 1: [Date]}
+\lipsum[1]
+
+\section{Jour 2: [Date]}
+\lipsum[2]
+
+\section{Jour 3: [Date]}
+\lipsum[3]
+
+\section{Jour 4: [Date]}
+\lipsum[4]
+
+\section{Jour 5: [Date]}
+\lipsum[5]
+
+\chapter{Semaine 2}
+\section{Jour 6: [Date]}
+\lipsum[6]
+
+\section{Jour 7: [Date]}
+\lipsum[7]
+
+\section{Jour 8: [Date]}
+\lipsum[8]
+
+\section{Jour 9: [Date]}
+\lipsum[9]
+
+\section{Jour 10: [Date]}
+\lipsum[10]
+
+\chapter{Semaine 3}
+\section{Jour 11: [Date]}
+\lipsum[11]
+
+\section{Jour 12: [Date]}
+\lipsum[12]
+
+\section{Jour 13: [Date]}
+\lipsum[13]
+
+\section{Jour 14: [Date]}
+\lipsum[14]
+
+\section{Jour 15: [Date]}
+\lipsum[15]
+
+\chapter{Semaine 4}
+\section{Jour 16: [Date]}
+\lipsum[16]
+
+\section{Jour 17: [Date]}
+\lipsum[17]
+
+\section{Jour 18: [Date]}
+\lipsum[18]
+
+\section{Jour 19: [Date]}
+\lipsum[19]
+
+\section{Jour 20: [Date]}
+\lipsum[20]
+
+\chapter{Semaine 5}
+\section{Jour 21: [Date]}
+\lipsum[21]
+
+\section{Jour 22: [Date]}
+\lipsum[22]
+
+\section{Jour 23: [Date]}
+\lipsum[23]
+
+\section{Jour 24: [Date]}
+\lipsum[24]
+
+\section{Jour 25: [Date]}
+\lipsum[25]
+
+\section{Jour 26: [Date]}
+\lipsum[26]
+
+\section{Jour 27: [Date]}
+\lipsum[27]
+
+\section{Jour 28: [Date]}
+\lipsum[28]
+
+\section{Jour 29: [Date]}
+\lipsum[29]
+
+\section{Jour 30: [Date]}
+\lipsum[30]
+
+\section{Jour 31: [Date]}
+\lipsum[31]
+
+\end{document}
