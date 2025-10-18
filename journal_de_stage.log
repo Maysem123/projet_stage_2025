@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.18)  18 OCT 2025 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.18)  18 OCT 2025 19:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -502,61 +502,48 @@ Chapitre 1.
 [2
 
 ]
-
-Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported on input line 114.
-[3]
 Chapitre 2.
+
+Overfull \hbox (5.41347pt too wide) in paragraph at lines 116--117
+[]\T1/cmr/m/n/10.95 Division du jeu de don-nées en en-sembles d'en-traî-ne-ment et de test avec la fonc-tion \T1/cmtt/m/n/10.95 train_test_split
+ []
+
+
+
+[3
+
+]
+Chapitre 3.
 
 
 [4
 
 ]
-
-[5]
-Chapitre 3.
-
-
-[6
-
-]
 Chapitre 4.
 
 
-[7
+[5
 
-]
-
-[8]
-Chapitre 5.
-
-
-[9
-
-]
-
-[10]
-
-[11] (journal_de_stage.aux)
+] (journal_de_stage.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `journal_de_stage.out' has not changed.
-(rerunfilecheck)             Checksum: B7D93981AC748A814029ED6353553A1E;4624.
+(rerunfilecheck)             Checksum: 647F14A54C613B0C4E5901D992963576;7379.
  ) 
 Here is how much of TeX's memory you used:
- 14101 strings out of 468081
- 225493 string characters out of 5426272
- 747361 words of memory out of 5000000
- 42521 multiletter control sequences out of 15000+600000
- 656775 words of font info for 83 fonts, out of 8000000 for 9000
+ 14066 strings out of 468081
+ 225092 string characters out of 5426272
+ 743354 words of memory out of 5000000
+ 42503 multiletter control sequences out of 15000+600000
+ 657089 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,306b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on journal_de_stage.pdf (12 pages, 114465 bytes).
+ 75i,11n,79p,499b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on journal_de_stage.pdf (6 pages, 143770 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 289 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 444 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

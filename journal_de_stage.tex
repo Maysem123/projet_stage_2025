@@ -95,102 +95,68 @@
 \newpage
 
 % --- Journal Entries ---
-\chapter{Semaine 1}
-\section{Jour 1: [Date]}
-\lipsum[1]
+\chapter{Semaine 1 : Initialisation et Exploration des Données}
+\section{Jour 1 : Lancement du projet et configuration de l'environnement}
+Prise en main du projet de prédiction du churn client. L'objectif est d'analyser les données des clients et de développer un modèle pour prédire leur probabilité de départ. Configuration de l'environnement de développement Python, et installation des bibliothèques de base comme Pandas, NumPy, et Scikit-learn.
 
-\section{Jour 2: [Date]}
-\lipsum[2]
+\section{Jour 2 : Analyse exploratoire des données (EDA)}
+Chargement du jeu de données \texttt{WA\_Fn-UseC\_-Telco-Customer-Churn.csv} avec Pandas. Première analyse des dimensions du dataset, des types de données et des valeurs manquantes. Une attention particulière a été portée à la colonne \texttt{TotalCharges} qui contient des valeurs manquantes pour les nouveaux clients.
 
-\section{Jour 3: [Date]}
-\lipsum[3]
+\section{Jour 3 : Visualisation des données}
+Utilisation de Matplotlib et Seaborn pour créer des visualisations. Création d'histogrammes pour les variables numériques comme `tenure` et `MonthlyCharges`, et de diagrammes à barres pour les variables catégorielles comme `Contract` et `PaymentMethod`. L'objectif est de comprendre la distribution des données et les relations initiales avec la variable cible `Churn`.
 
-\section{Jour 4: [Date]}
-\lipsum[4]
+\section{Jour 4 : Prétraitement des données}
+Nettoyage des données. Les valeurs manquantes dans `TotalCharges` ont été remplacées par zéro, en supposant que les nouveaux clients n'ont pas encore de frais totaux. Conversion des variables catégorielles en formats numériques à l'aide de l'encodage one-hot pour préparer les données pour les modèles de machine learning.
 
-\section{Jour 5: [Date]}
-\lipsum[5]
+\section{Jour 5 : Ingénierie des fonctionnalités (Feature Engineering)}
+Création de nouvelles fonctionnalités pour améliorer la performance du modèle. Par exemple, la variable `tenure` (ancienneté) a été regroupée en catégories (`TenureGroup`) pour mieux capturer les cycles de vie des clients. Finalisation du jeu de données pour la phase de modélisation.
 
-\chapter{Semaine 2}
-\section{Jour 6: [Date]}
-\lipsum[6]
+\chapter{Semaine 2 : Modélisation et Évaluation}
+\section{Jour 6 : Division des données et premier modèle}
+Division du jeu de données en ensembles d'entraînement et de test avec la fonction \texttt{train\_test\_split} de Scikit-learn. Entraînement d'un modèle de régression logistique comme référence de base pour évaluer les performances des modèles plus complexes.
 
-\section{Jour 7: [Date]}
-\lipsum[7]
+\section{Jour 7 : Entraînement du modèle CatBoost}
+Exploration et entraînement d'un modèle plus avancé, CatBoost. Ce modèle est particulièrement efficace car il gère nativement les variables catégorielles, ce qui simplifie le prétraitement. Le modèle a été entraîné sur l'ensemble de données d'entraînement.
 
-\section{Jour 8: [Date]}
-\lipsum[8]
+\section{Jour 8 : Optimisation des hyperparamètres}
+Utilisation de techniques comme \texttt{GridSearchCV} pour trouver les meilleurs hyperparamètres pour le modèle CatBoost. L'objectif est d'améliorer la précision et la capacité de généralisation du modèle en testant différentes combinaisons de paramètres comme la profondeur des arbres et le taux d'apprentissage.
 
-\section{Jour 9: [Date]}
-\lipsum[9]
+\section{Jour 9 : Évaluation du modèle final}
+Évaluation du modèle CatBoost optimisé sur l'ensemble de test. Les métriques de performance comme l'exactitude (accuracy), la précision, le rappel (recall) et le score F1 ont été calculées. Le modèle a montré des performances prometteuses par rapport au modèle de base.
 
-\section{Jour 10: [Date]}
-\lipsum[10]
+\section{Jour 10 : Sauvegarde du modèle}
+Sauvegarde du modèle entraîné et optimisé à l'aide de `joblib`. Cela permet de réutiliser le modèle dans l'application Streamlit sans avoir à le ré-entraîner à chaque fois, ce qui est crucial pour le déploiement.
 
-\chapter{Semaine 3}
-\section{Jour 11: [Date]}
-\lipsum[11]
+\chapter{Semaine 3 : Interprétabilité et Développement de l'Interface}
+\section{Jour 11 : Introduction à l'IA Explicable (XAI) avec SHAP}
+Recherche sur l'importance de l'interprétabilité des modèles. Découverte de la bibliothèque SHAP (SHapley Additive exPlanations) qui permet d'expliquer les prédictions de n'importe quel modèle de machine learning.
 
-\section{Jour 12: [Date]}
-\lipsum[12]
+\section{Jour 12 : Implémentation de SHAP}
+Création d'un `TreeExplainer` pour le modèle CatBoost. Calcul des valeurs SHAP pour l'ensemble des données de test. Ces valeurs permettent de quantifier la contribution de chaque caractéristique à la prédiction pour chaque client.
 
-\section{Jour 13: [Date]}
-\lipsum[13]
+\section{Jour 13 : Développement de l'application Streamlit}
+Début du développement de l'interface utilisateur avec Streamlit. Création du fichier principal `app.py`, mise en place de la structure de base, du titre, et des fonctions pour charger le modèle et les données de manière efficace en utilisant le cache de Streamlit.
 
-\section{Jour 14: [Date]}
-\lipsum[14]
+\section{Jour 14 : Création de la page "Analyse Globale"}
+Développement de la première page de l'application : un tableau de bord pour l'analyse globale du churn. Ajout de filtres interactifs pour permettre aux utilisateurs d'explorer les données en fonction du type de contrat, du service Internet, etc.
 
-\section{Jour 15: [Date]}
-\lipsum[15]
+\section{Jour 15 : Visualisations interactives}
+Intégration de graphiques interactifs (avec Plotly Express) dans la page d'analyse globale. Création de graphiques montrant le taux de churn par groupe d'ancienneté et d'autres visualisations pertinentes pour aider à comprendre les tendances générales.
 
-\chapter{Semaine 4}
-\section{Jour 16: [Date]}
-\lipsum[16]
+\chapter{Semaine 4 : Finalisation de l'Application et Rapports}
+\section{Jour 16 : Développement de la page "Diagnostic Client"}
+Création de la deuxième fonctionnalité principale de l'application : une page pour le diagnostic individuel des clients. Ajout d'un sélecteur pour choisir un `customerID` et afficher les détails de ce client.
 
-\section{Jour 17: [Date]}
-\lipsum[17]
+\section{Jour 17 : Intégration des explications SHAP}
+Intégration des visualisations SHAP dans la page de diagnostic. Affichage d'un graphique "force plot" de SHAP pour le client sélectionné, montrant visuellement les facteurs qui augmentent ou diminuent sa probabilité de churn.
 
-\section{Jour 18: [Date]}
-\lipsum[18]
+\section{Jour 18 : Amélioration de l'interface utilisateur (UI/UX)}
+Travail sur le style et l'ergonomie de l'application. Ajout de CSS personnalisé pour une apparence plus professionnelle, amélioration de la disposition des éléments et ajout de textes explicatifs pour guider l'utilisateur.
 
-\section{Jour 19: [Date]}
-\lipsum[19]
+\section{Jour 19 : Rédaction du rapport de stage}
+Début de la rédaction du rapport de stage (`report.tex`). Documentation de toutes les étapes du projet, de l'analyse initiale des données à la création de l'application, en passant par la modélisation et l'interprétabilité.
 
-\section{Jour 20: [Date]}
-\lipsum[20]
-
-\chapter{Semaine 5}
-\section{Jour 21: [Date]}
-\lipsum[21]
-
-\section{Jour 22: [Date]}
-\lipsum[22]
-
-\section{Jour 23: [Date]}
-\lipsum[23]
-
-\section{Jour 24: [Date]}
-\lipsum[24]
-
-\section{Jour 25: [Date]}
-\lipsum[25]
-
-\section{Jour 26: [Date]}
-\lipsum[26]
-
-\section{Jour 27: [Date]}
-\lipsum[27]
-
-\section{Jour 28: [Date]}
-\lipsum[28]
-
-\section{Jour 29: [Date]}
-\lipsum[29]
-
-\section{Jour 30: [Date]}
-\lipsum[30]
-
-\section{Jour 31: [Date]}
-\lipsum[31]
+\section{Jour 20 : Finalisation et préparation de la soutenance}
+Relecture finale du code, de l'application et du rapport. Préparation d'une présentation pour la soutenance de stage, résumant le travail accompli, les défis rencontrés et les résultats obtenus. Nettoyage du dépôt Git et finalisation de la documentation.
 
 \end{document}
