@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1760819919.49244 "c:/Users/user/Projet_Stage/projet_stage_2025/report.tex" "report.pdf" "report" 1760819923.23571 0
+["pdflatex"] 1760822539.66426 "c:/Users/user/Projet_Stage/projet_stage_2025/report.tex" "report.pdf" "report" 1760822543.88571 0
   "C:/Users/user/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760808846 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/user/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1760808868 28976 be96bf25e23183d49f70a9a157ef8d59 ""
   "C:/Users/user/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1760808857 31952 3464a4930c8ba601175653b4b21c223a ""
@@ -240,7 +240,7 @@
   "chapters/new_04_fonctionnalites.tex" 1760803463 4841 68d726eb9ae78d26227d1e3fb51f3943 ""
   "chapters/new_04_modelisation_evaluation.tex" 1760803463 4849 648484eeaf58a5ae2b780e8a7083193e ""
   "chapters/new_05_analyse_fonctionnelle.tex" 1760803463 13778 47db78de758795584a332426132e51d8 ""
-  "chapters/new_06_interface_utilisateur.tex" 1760819914 4360 c09d7906b9820264bc54e7f86a011878 ""
+  "chapters/new_06_interface_utilisateur.tex" 1760822534 4039 84a16d30ab6a034fe096f9ff373b7635 ""
   "chapters/new_07_ameliorations_futures.tex" 1760803463 4890 79e0f4aa90ebe743d702c2ce97ca5cbd ""
   "chapters/new_08_conclusion.tex" 1760803463 2650 c5a2ac4fd6b72e6996c96414d1ae3ec1 ""
   "entreprise-logo.png" 1760803463 8069 b51defe2d2f34a4edd45242c0b811d41 ""
@@ -251,10 +251,10 @@
   "images/customer_analytics_dashboard.png" 1760817726 313111 30efe17f25d8153daa486e3e00dc17d7 ""
   "images/global_analytics_dashboard.png" 1760817543 394677 5bca24fc0e29ab5530426e5c8ca73276 ""
   "logoesprim.png" 1760803463 8225 f6eae5df8785a6865c3459ea337cd042 ""
-  "report.aux" 1760819922 14181 b1d72c4aa6d07ad6de734346b2891aee "pdflatex"
-  "report.out" 1760819922 12352 10b5f0285b5d89a85ceccb7a9b3bef78 "pdflatex"
+  "report.aux" 1760822543 14181 b1d72c4aa6d07ad6de734346b2891aee "pdflatex"
+  "report.out" 1760822543 12352 10b5f0285b5d89a85ceccb7a9b3bef78 "pdflatex"
   "report.tex" 1760804865 5799 a6d2cb4b27f2a549b5c0bba03acf68e5 ""
-  "report.toc" 1760819922 5833 bef5f82da18d2b7e155638b76039fa05 "pdflatex"
+  "report.toc" 1760822543 5833 bef5f82da18d2b7e155638b76039fa05 "pdflatex"
   (generated)
   "report.aux"
   "report.log"
